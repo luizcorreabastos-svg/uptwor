@@ -1,249 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><script>
-!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.install=t():e.install=t()}("undefined"!=typeof window?window:self,(function(){return function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=72)}({72:function(e,t,n){"use strict";var o=this&&this.__spreadArray||function(e,t,n){if(n||2===arguments.length)for(var o,r=0,i=t.length;r<i;r++)!o&&r in t||(o||(o=Array.prototype.slice.call(t,0,r)),o[r]=t[r]);return e.concat(o||Array.prototype.slice.call(t))};Object.defineProperty(t,"__esModule",{value:!0});var r=function(e,t,n){var o,i=e.createElement("script");i.type="text/javascript",i.async=!0,i.src=t,n&&(i.onerror=function(){r(e,n)});var a=e.getElementsByTagName("script")[0];null===(o=a.parentNode)||void 0===o||o.insertBefore(i,a)};!function(e,t,n){e.KwaiAnalyticsObject=n;var i=e[n]=e[n]||[];i.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];var a=function(e,t){e[t]=function(){for(var n=[],r=0;r<arguments.length;r++)n[r]=arguments[r];var i=o([t],n,!0);e.push(i)}};i.methods.forEach((function(e){a(i,e)})),i.instance=function(e){var t,n=(null===(t=i._i)||void 0===t?void 0:t[e])||[];return i.methods.forEach((function(e){a(n,e)})),n},i.load=function(e,o){var a="https://s21-def.ap4r.com/kos/s101/nlav112572/pixel/events.js";i._i=i._i||{},i._i[e]=[],i._i[e]._u=a,i._t=i._t||{},i._t[e]=+new Date,i._o=i._o||{},i._o[e]=o||{};var c="?sdkid=".concat(e,"&lib=").concat(n);r(t,a+c,"https://s21-def.ks-la.net/kos/s101/nlav112572/pixel/events.js"+c)}}(window,document,"kwaiq")}})}));
-</script>
-<script>
-kwaiq.load('317584261091304');
-kwaiq.page();
-</script>
-    <script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
-    <script src="js/utm-handler.js" data-token="5b48c5ec-64e1-4504-b664-09413b1de229" data-click-id-param="click_id"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finalizar Pedido — Ambiente Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#0eab3f; --green-dark:#09912e; --ink:#0f172a;
+      --muted:#64748b; --bg:#f6f8fb; --line:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,sans-serif;margin:0;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:520px;margin:0 auto;padding:16px}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pagamento 3</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f9;
-            color: #333;
-            text-align: center;
-        }
+    /* Barra de confiança */
+    .trustbar{background:#0f172a;color:#fff;font-size:12px;text-align:center;padding:8px;letter-spacing:.3px}
+    .trustbar strong{color:#4ade80}
 
-        header {
-            background-color: #0eab3f;
-            color: #fff;
-            padding: 1rem 0;
-        }
+    /* Card principal */
+    .card{background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(15,23,42,.08);padding:24px;margin-top:16px}
 
-        header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
+    /* Selo de segurança */
+    .secure{display:flex;align-items:center;gap:8px;justify-content:center;font-size:13px;color:var(--muted);margin-bottom:8px}
+    .secure svg{width:16px;height:16px;fill:var(--green)}
 
-        .content {
-            max-width: 600px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    h1{font-size:22px;line-height:1.25;margin:8px 0 4px;text-align:center}
+    .sub{text-align:center;color:var(--muted);font-size:14px;margin:0 0 20px}
 
-        .content img {
-            width: 100px;
-            margin: 1rem 0;
-        }
+    /* Resumo do pedido */
+    .summary{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:20px}
+    .row{display:flex;justify-content:space-between;font-size:14px;padding:6px 0;color:var(--muted)}
+    .row.total{border-top:1px dashed var(--line);margin-top:8px;padding-top:12px;font-size:18px;font-weight:800;color:var(--ink)}
+    .row.total span:last-child{color:var(--green)}
 
-        .content h2 {
-            font-size: 1.8rem;
-            color: #0eab3f;
-            margin-bottom: 1rem;
-        }
+    /* Benefícios (reduz ansiedade pós-clique) */
+    .benefits{list-style:none;padding:0;margin:0 0 20px}
+    .benefits li{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin-bottom:10px}
+    .benefits svg{width:18px;height:18px;flex:0 0 18px;fill:var(--green);margin-top:1px}
 
-        .content p {
-            line-height: 1.6;
-        }
+    /* CTA */
+    .cta{display:block;width:100%;text-align:center;padding:16px;font-size:16px;font-weight:800;color:#fff;background:linear-gradient(180deg,var(--green),var(--green-dark));border:none;border-radius:12px;text-decoration:none;box-shadow:0 8px 20px rgba(14,171,63,.35);transition:transform .15s,box-shadow .15s}
+    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(14,171,63,.45)}
+    .cta small{display:block;font-weight:500;font-size:12px;opacity:.9;margin-top:4px}
 
-        .content .highlight {
-            font-weight: bold;
-            color: #0eab3f;
-        }
+    /* Reforços de confiança */
+    .badges{display:flex;justify-content:center;gap:16px;margin-top:18px;font-size:11px;color:var(--muted);flex-wrap:wrap}
+    .badges div{display:flex;align-items:center;gap:4px}
+    .badges svg{width:14px;height:14px;fill:var(--muted)}
 
-        .button {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.8rem 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #fff;
-            background: #0eab3f;
-            border: none;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
+    footer{text-align:center;font-size:11px;color:var(--muted);margin:24px 0 8px;line-height:1.6}
 
-        .button:hover {
-            background: #09912e;
-        }
-
-        footer {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.2rem;
-            }
-
-            .content h2 {
-                font-size: 1.5rem;
-            }
-
-            .content {
-                padding: 1rem;
-            }
-        }
-    </style>
+    @media(max-width:420px){h1{font-size:19px}.card{padding:18px}}
+  </style>
 </head>
 <body>
-    <header>
-        <h1>ATENÇÃO!</h1>
-    </header>
 
-    <div class="content">
-        <img src="images/logo-pix-icone-1024.png" alt="Logo Pix" width="100">
-        <h2>Pagamento aprovado com sucesso!</h2>
-        <p><strong>Seu pagamento foi processado com êxito</strong>, mas a transferência foi temporariamente interrompida pelo <span class="highlight">Banco Central do Brasil</span> para garantir a segurança da transação.</p>
-        <p>Para concluir o processo e evitar fraudes, é necessário realizar o pagamento de uma <span class="highlight">tarifa simbólica de segurança</span>. Esse valor será reembolsado integralmente em até <strong>2 minutos</strong> após o pagamento.</p>
-        <p><strong>Valor da tarifa:</strong> <span class="highlight">R$ 12,11</span></p>
-        <a href="<!DOCTYPE html>
-<html lang="pt-BR">
-<head><script>
-!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.install=t():e.install=t()}("undefined"!=typeof window?window:self,(function(){return function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=72)}({72:function(e,t,n){"use strict";var o=this&&this.__spreadArray||function(e,t,n){if(n||2===arguments.length)for(var o,r=0,i=t.length;r<i;r++)!o&&r in t||(o||(o=Array.prototype.slice.call(t,0,r)),o[r]=t[r]);return e.concat(o||Array.prototype.slice.call(t))};Object.defineProperty(t,"__esModule",{value:!0});var r=function(e,t,n){var o,i=e.createElement("script");i.type="text/javascript",i.async=!0,i.src=t,n&&(i.onerror=function(){r(e,n)});var a=e.getElementsByTagName("script")[0];null===(o=a.parentNode)||void 0===o||o.insertBefore(i,a)};!function(e,t,n){e.KwaiAnalyticsObject=n;var i=e[n]=e[n]||[];i.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];var a=function(e,t){e[t]=function(){for(var n=[],r=0;r<arguments.length;r++)n[r]=arguments[r];var i=o([t],n,!0);e.push(i)}};i.methods.forEach((function(e){a(i,e)})),i.instance=function(e){var t,n=(null===(t=i._i)||void 0===t?void 0:t[e])||[];return i.methods.forEach((function(e){a(n,e)})),n},i.load=function(e,o){var a="https://s21-def.ap4r.com/kos/s101/nlav112572/pixel/events.js";i._i=i._i||{},i._i[e]=[],i._i[e]._u=a,i._t=i._t||{},i._t[e]=+new Date,i._o=i._o||{},i._o[e]=o||{};var c="?sdkid=".concat(e,"&lib=").concat(n);r(t,a+c,"https://s21-def.ks-la.net/kos/s101/nlav112572/pixel/events.js"+c)}}(window,document,"kwaiq")}})}));
-</script>
-<script>
-kwaiq.load('317584261091304');
-kwaiq.page();
-</script>
-    <script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
-    <script src="js/utm-handler.js" data-token="5b48c5ec-64e1-4504-b664-09413b1de229" data-click-id-param="click_id"></script>
+<div class="trustbar">🔒 Ambiente seguro · <strong>Dados criptografados SSL 256-bit</strong></div>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pagamento 3</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f9;
-            color: #333;
-            text-align: center;
-        }
-
-        header {
-            background-color: #0eab3f;
-            color: #fff;
-            padding: 1rem 0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-
-        .content {
-            max-width: 600px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .content img {
-            width: 100px;
-            margin: 1rem 0;
-        }
-
-        .content h2 {
-            font-size: 1.8rem;
-            color: #0eab3f;
-            margin-bottom: 1rem;
-        }
-
-        .content p {
-            line-height: 1.6;
-        }
-
-        .content .highlight {
-            font-weight: bold;
-            color: #0eab3f;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.8rem 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #fff;
-            background: #0eab3f;
-            border: none;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-
-        .button:hover {
-            background: #09912e;
-        }
-
-        footer {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.2rem;
-            }
-
-            .content h2 {
-                font-size: 1.5rem;
-            }
-
-            .content {
-                padding: 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>ATENÇÃO!</h1>
-    </header>
-
-    <div class="content">
-        <img src="images/logo-pix-icone-1024.png" alt="Logo Pix" width="100">
-        <h2>Pagamento aprovado com sucesso!</h2>
-        <p><strong>Seu pagamento foi processado com êxito</strong>, mas a transferência foi temporariamente interrompida pelo <span class="highlight">Banco Central do Brasil</span> para garantir a segurança da transação.</p>
-        <p>Para concluir o processo e evitar fraudes, é necessário realizar o pagamento de uma <span class="highlight">tarifa simbólica de segurança</span>. Esse valor será reembolsado integralmente em até <strong>2 minutos</strong> após o pagamento.</p>
-        <p><strong>Valor da tarifa:</strong> <span class="highlight">R$ 12,11</span></p>
-        <a href="https://ambienteeonline.org.ua/c/124068fb60" class="button">Pagar tarifa anti-fraude e liberar minha entrega</a> 
+<div class="wrap">
+  <div class="card">
+    <div class="secure">
+      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+      Conexão segura verificada
     </div>
 
-    <footer>
-        <p>© 2025 Pagamento Seguro. Todos os direitos reservados.</p>
-    </footer>
+    <h1>Finalize seu pedido com segurança</h1>
+    <p class="sub">Você está a um passo de concluir sua compra. Revise os dados abaixo.</p>
 
-</body>
-</html>" class="button">Pagar tarifa anti-fraude e liberar minha entrega</a> 
+    <!-- ⬇️ SUBSTITUA pelos seus dados reais de produto -->
+    <div class="summary">
+      <div class="row"><span>Produto</span><span>Nome do seu produto</span></div>
+      <div class="row"><span>Quantidade</span><span>1</span></div>
+      <div class="row"><span>Entrega</span><span>Imediata (e-mail)</span></div>
+      <div class="row total"><span>Total</span><span>R$ 00,00</span></div>
     </div>
 
-    <footer>
-        <p>© 2025 Pagamento Seguro. Todos os direitos reservados.</p>
-    </footer>
+    <ul class="benefits">
+      <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Acesso liberado imediatamente após a confirmação</li>
+      <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Pagamento via Pix, cartão ou boleto</li>
+      <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Garantia de 7 dias — reembolso total se não gostar</li>
+      <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Suporte por e-mail em até 24h</li>
+    </ul>
+
+    <a class="cta" href="https://ambienteeonline.org.ua/c/124068fb60" rel="noopener">
+      Ir para o pagamento seguro
+      <small>Você será redirecionado ao checkout oficial</small>
+    </a>
+
+    <div class="badges">
+      <div><svg viewBox="0 0 24 24"><path d="M18 8h-1V6a5 5 0 00-10 0v2H6a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V10a2 2 0 00-2-2zm-6 9a2 2 0 110-4 2 2 0 010 4zm3.1-9H8.9V6a3.1 3.1 0 016.2 0v2z"/></svg> SSL 256-bit</div>
+      <div><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg> Dados protegidos</div>
+      <div><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1a3 3 0 00-5.5-1.65L12 4.09 11.5 3.35A3 3 0 006 4c0 .35.07.69.18 1H4a2 2 0 00-2 2v11a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2z"/></svg> Compra garantida</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Ambiente Online · CNPJ 00.000.000/0001-00<br>
+    Ao continuar você concorda com os Termos e a Política de Privacidade.
+  </footer>
+</div>
 
 </body>
 </html>
